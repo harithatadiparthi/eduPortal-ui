@@ -1,0 +1,11 @@
+input:required,
+textarea:required {
+  border-color: red !important;
+}
+
+.overall
+{
+  height:100%;
+  width:100%
+}
+

@@ -1,0 +1,135 @@
+
+
+       [ {
+            "CustomerId":101,
+            "Date":"22/05/2019",
+            "Firstname": "Ram",
+           "Lastname": "Srikanth",
+            "Company": "HCL",
+            "City": "Hyderabad",
+            "EMail":"ram@hcl.com",
+            "State":"Telangana",
+            "ZipCode":500000
+        },
+        {
+            "CustomerId":102,
+            "Firstname": "Sanjay",
+           "Lastname": "Varma",
+            "Company": "HCL",
+            "City": "Chennai",
+            "EMail":"sv@hcl.com",
+            "State":"TN",
+            "ZipCode":500001
+        },
+        {  
+            "CustomerId":103,
+            "Firstname": "Surya",
+           "Lastname": "Teja",
+            "Company": "TCS",
+            "City": "Hyderabad",
+            "EMail":"st@tcs.com",
+            "State":"Telangana",
+            "ZipCode":500002
+        },
+    
+        {  
+            "CustomerId":104,
+            "Firstname": "Sanjeev",
+           "Lastname": "Manugarra",
+            "Company": "E-Silicon",
+            "City": "Mumbai",
+            "EMail":"ms@esilicon.com",
+            "State":"Maharashtra",
+            "ZipCode":500003
+        },
+    
+        {  
+            "CustomerId":105,
+            "Firstname": "Tejaswi",
+           "Lastname": "Chilukuru",
+            "Company": "TCS",
+            "City": "Chennai",
+            "EMail":"tc@tcs.com",
+            "State":"TN",
+            "ZipCode":500004
+        },
+    
+        {  
+            "CustomerId":106,
+            "Firstname": "Nikhilesh",
+           "Lastname": "Samavedm",
+            "Company": "TCS",
+            "City": "Hyderabad",
+            "EMail":"ns@tcs.com",
+            "State":"Telangana",
+            "ZipCode":500005
+        },
+    
+        {  
+            "CustomerId":107,
+            "Firstname": "Supriya",
+           "Lastname": "Velaga",
+            "Company": "TCS",
+            "City": "Hyderabad",
+            "EMail":"sv@tcs.com",
+            "State":"Telangana",
+            "ZipCode":500007
+        },
+    
+        {  
+            "CustomerId":108,
+            "Firstname": "Praneeth",
+           "Lastname": "Narra",
+            "Company": "CTS",
+            "City": "Kolkata",
+            "EMail":"pn@cts.com",
+            "State":"WB",
+            "ZipCode":500008
+        },
+    
+        {  
+            "CustomerId":109,
+            "Firstname": "Susmitha",
+           "Lastname": "Reddy",
+            "Company": "CTS",
+            "City": "Chennai",
+            "EMail":"sr@cts.com",
+            "State":"TN",
+            "ZipCode":500009
+        },
+    
+        {  
+            "CustomerId":110,
+            "Firstname": "Sankeerthana",
+           "Lastname": "Adanki",
+            "Company": "MBit",
+            "City": "Chennai",
+            "EMail":"sa@mb.com",
+            "State":"TN",
+            "ZipCode":500010
+        },
+    
+        {  
+            "CustomerId":111,
+            "Firstname": "Durga",
+           "Lastname": "Rao",
+            "Company": "CTS",
+            "City": "Hyderabad",
+            "EMail":"dr@cts.com",
+            "State":"Telangana",
+            "ZipCode":500011
+        },
+    
+        {  
+            "CustomerId":112,
+            "Firstname": "Sarath",
+           "Lastname": "Singh",
+            "Company": "CTS",
+            "City": "Hyderabad",
+            "EMail":"ss@cts.com",
+            "State":"Telangana",
+            "ZipCode":500012
+        }]
+        
+    
+       

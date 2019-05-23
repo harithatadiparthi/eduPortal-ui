@@ -1,0 +1,109 @@
+<form></form>
+<div>
+
+<div class="body">
+
+ <br>   
+
+    
+  <div class="border border-grey">
+        <div class="form-group col-md-3">
+            <p><b>Print Certificates and Labels</b></p>
+            <label for="Date">Enter Date</label>
+            <input type="date" class="form-control" id="date" placeholder="Date"><br>
+           
+            
+            <div class="form-group">
+                <button class="btn btn-primary">Retrive Records</button>
+            </div>
+            
+        </div>
+
+
+    </div><br>
+    
+<!-- <div class="border border-grey">
+    <p><b>Select your certificate type</b></p>
+    
+    <div class="radio">
+        <label><input type="radio" name="radio-choice" required>CTEC</label> &nbsp;
+        <label><input type="radio" name="radio-choice" required>Regular</label> &nbsp;
+        <label><input type="radio" name="radio-choice" required>Pennsylvania</label>
+      </div>
+</div>&nbsp; -->
+          
+  <table class="table table-hover" > 
+      <thead>
+            <th [class.active]="order === 'Option'"
+            (click)="setorder('id')"><span [hidden]="reverse">&darr;</span><span [hidden]="!reverse">&uarr;</span> </th>
+          <th [class.active]="order === 'customerid'"
+              (click)="setorder('id')">CUSTOMERID :<span [hidden]="reverse">&darr;</span><span [hidden]="!reverse">&uarr;</span> </th>
+          <th [class.active]="order === 'firstname'"
+              (click)="setorder('name')" > FIRSTNAME : <span [hidden]="reverse">&darr;</span><span [hidden]="!reverse">&uarr;</span></th>
+          <th [class.active]="order === 'lastname'"
+              (click)="setorder('address')">LASTNAME : <span [hidden]="reverse">&darr;</span><span [hidden]="!reverse">&uarr;</span></th>
+             <th [class.active]="order === 'company'"
+              (click)="setorder('occupation')">COMPANY :<span [hidden]="reverse">&darr;</span><span [hidden]="!reverse">&uarr;</span></th>
+              <th [class.active]="order === 'city'"
+              (click)="setorder('address')">CITY : <span [hidden]="reverse">&darr;</span><span [hidden]="!reverse">&uarr;</span></th>
+              <th [class.active]="order === 'email'"
+              (click)="setorder('address')">EMAIL : <span [hidden]="reverse">&darr;</span><span [hidden]="!reverse">&uarr;</span></th>
+              <th [class.active]="order === 'state'"
+              (click)="setorder('address')">STATE : <span [hidden]="reverse">&darr;</span><span [hidden]="!reverse">&uarr;</span></th>
+              <th [class.active]="order === 'zipcode'"
+              (click)="setorder('address')">ZIPCODE : <span [hidden]="reverse">&darr;</span><span [hidden]="!reverse">&uarr;</span></th>
+        </thead>
+        
+    <thead>
+      
+     <th></th>
+       
+        <th ><input type="text" style="width:128px" [(ngModel)]='searchcustomerid' placeholder="filter by customerid"></th>
+        <th><input type="text" style="width:128px" [(ngModel)]='searchfirstname' placeholder="filter by firstname"></th>
+        <th><input type="text" style="width:128px" [(ngModel)]='searchlastname' placeholder="filter by lastname"></th>
+        <th><input type="text" style="width:128px" [(ngModel)]='searchcompany' placeholder="filter by company"></th>
+        <th><input type="text" style="width:128px" [(ngModel)]='searchcity' placeholder="filter by city"></th>
+        <th><input type="text" style="width:128px" [(ngModel)]='searchemail' placeholder="filter by email"></th>
+        <th><input type="text" style="width:128px" [(ngModel)]='searchstate' placeholder="filter by state"></th>
+        <th><input type="text" style="width:128px" [(ngModel)]='searchzipcode' placeholder="filter by zipcode"></th>
+    
+    </thead>
+    <tbody>
+           
+      <tr *ngFor="let data of arrData  | Firstnamefilter:searchfirstname | Lastnamefilter:searchlastname | Companyfilter:searchcompany | Cityfilter:searchcity | Emailfilter:searchemail | Statefilter:searchstate |Zipcodefilter:searchzipcode | orderBy: order:reverse | paginate: { itemsPerPage: 6, currentPage: p } ">
+          
+              <td><input type="checkbox"  value="${data.CustomerId}" required></td>
+              <td>{{data.CustomerId}}</td>
+              <td>{{data.Firstname}}</td>
+              <td>{{data.Lastname}}</td>
+              <td>{{data.Company}}</td>
+              <td>{{data.City}}</td>
+              <td>{{data.EMail}}</td>
+              <td>{{data.State}}</td>
+              <td>{{data.ZipCode}}</td>
+      </tr>
+   
+    </tbody>
+    
+  </table>
+
+  <div class="panel-footer">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+   </div>
+
+   <div class="links">
+        <a href="#"><b>Print Certificates</b></a> &nbsp;
+        <a href="#"><b>Print Labels</b></a> &nbsp;
+        <a href="#"><b>Email Certificates</b></a> 
+  
+    </div>
+
+</div>
+
+
+
+    
+    
+    
+
+
